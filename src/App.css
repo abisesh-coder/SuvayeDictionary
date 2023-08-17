@@ -7,7 +7,8 @@ border-radius: 20px;
 border: 1px;
 background-color: #CED9E3;
   position: absolute;
-  padding-left: 60px;
+  padding-left: 70px;
+  font-size: 20px;
   
  
 
@@ -28,11 +29,46 @@ left: 240px;
   } 
   .showResults{
     width: 480px;
-    height: 626px;
+    height: 300px;
     margin-top: 100px;
     margin-left: 250px;
     
     
     
 
+  }
+  .image-banner{
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    position: absolute;
+    padding-left: 20px;
+    bottom: -120px;
+  }
+  
+  .image{
+    height: 65px;
+    width: 65px;
+    object-fit: cover;
+    object-fit: cover;
+  }
+  .footer{
+    background: blue;
+    width: 550px;
+    height: 55px;
+    margin-left: 350px;
+    border-radius: 20px;
+    display: flex;
+  }
+  .twitter-banner{
+    height: 30px;
+    width: 45px;
+    margin-left: 300px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+    gap: 35px;
   }

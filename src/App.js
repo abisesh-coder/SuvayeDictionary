@@ -15,14 +15,11 @@ function App() {
     });
   }
 
-  function playAudio() {
-    let audio = new Audio(data.phonetics[0].audio);
-    audio.play();
-  }
-  function showVerb(){
-
-  }
-
+  // function playAudio() {
+  //   let audio = new Audio(data.phonetics[0].audio);
+  //   audio.play();
+  // }
+ 
 
   return (
     <div className="App">
@@ -46,10 +43,10 @@ function App() {
          <i className="fa fa-search" aria-hidden="true"/>
         </button>
         <div>
-        <Tabs/>
+        <Tabs data={data}/>
         </div>
         
-        {data && (
+        {/* {data && (
         <div className="showResults">
           <h2>
             {data.phonetic}{" "}
@@ -63,10 +60,7 @@ function App() {
 
             </button>
           </h2>
-          <div>
-          <button >Noun</button>
-          <button onClick={showVerb()}>Verb</button>
-          </div>
+          
           <h4>Parts of speech:</h4>
  
            
@@ -79,18 +73,25 @@ function App() {
 <p>{data.meanings[0].definitions[0].definition}</p>
  
  
-          {/* <h4>Example:</h4>
- 
-           
-<p>{data.meanings[0].definitions[0].example}</p> */}
+          
  
         </div>
-      )}
+      )} */}
 
 
         
 
       </div>
+      <div className='footer'>
+      <div className='image-banner'>
+      <img className="image" src="image/img1.png" alt='suvaye'></img>
+      </div>
+      <div className='twitter-banner'>
+        <i class="fa-brands fa-twitter"></i>
+        <h2 className='official'>suvaye.official</h2>
+      </div>
+      </div>
+     
       
     </div>
   );
